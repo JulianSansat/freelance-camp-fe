@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Document } from './document';
+import { Document } from './documents';
 
 @Component({
   moduleId: module.id,
