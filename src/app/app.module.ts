@@ -2,6 +2,8 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { AppComponent }  from './app.component';
 
 import { HomepageComponent } from './homepage/homepage.component';
@@ -14,18 +16,22 @@ import { ProposalListComponent } from './proposal/proposal-list.component';
 
 import { ProposalNewComponent } from './proposal/proposal-new.component';
 
+import { ProposalShowComponent } from './proposal/proposal-show.component';
+
 @NgModule({
   imports:      [
   BrowserModule,
   AppRoutingModule,
-  FormsModule
+  FormsModule,
+  NgbModule.forRoot()
   ],
   declarations: [
       AppComponent,
       HomepageComponent,
       DocumentsComponent,
       ProposalListComponent,
-      ProposalNewComponent
+      ProposalNewComponent,
+      ProposalShowComponent
       ],
   bootstrap:    [ AppComponent ]
 })
